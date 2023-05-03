@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sara Shember</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kiwi+Maru:wght@500&family=Work+Sans:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script>
+        function disappear(projectPage) {
+            let page = document.getElementById(projectPage);
+
+            if(page.classList.contains("d-none")){
+                switch (projectPage){
+                    case "IBM":
+                        document.getElementById("Professional-Practices").classList.add("d-none");
+                        document.getElementById("Previous-Jobs").classList.add("d-none");
+                        document.getElementById("Skills").classList.add("d-none");
+                        break;
+                    case "Professional-Practices":
+                        document.getElementById("IBM").classList.add("d-none");
+                        document.getElementById("Previous-Jobs").classList.add("d-none");
+                        document.getElementById("Skills").classList.add("d-none");
+                    break;
+                    case "Previous-Jobs":
+                        document.getElementById("IBM").classList.add("d-none");
+                        document.getElementById("Professional-Practices").classList.add("d-none");
+                        document.getElementById("Skills").classList.add("d-none");
+                        break;
+                    case "Skills":
+                        document.getElementById("IBM").classList.add("d-none");
+                        document.getElementById("Professional-Practices").classList.add("d-none");
+                        document.getElementById("Previous-Jobs").classList.add("d-none");
+                        break;
+                }
+                page.classList.remove("d-none");
+            } else {
+                page.classList.add("d-none");
+            }
+        }
+    </script>
+</head>
+<body>
+    <section id="Myself" class="pt-5 shadow">
+        <div id="Menu">
+            <button class="btn btn-menu mx-5" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">
+                <svg xmlns="http://www.w3.org/2000/svg" width="2rem" fill="#EB6440" class="bi bi-list" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+                </svg>
+            </button>
+            <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+                <div class="offcanvas-header">
+                    <h4 class="offcanvas-title">Sections</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="list-group">
+                    <a href="#Myself" class="list-group-item list-group-item-action">
+                        <h5>About Me</h5>
+                    </a>
+                    <a href="#Skills-Resume" class="list-group-item list-group-item-action">
+                        <h5>Main Skills</h5>
+                    </a>
+                    <a href="#Job-Experience" class="list-group-item list-group-item-action">
+                        <h5>Job Experience</h5>
+                    </a>
+                    <a href="#Contact-Me" class="list-group-item list-group-item-action">
+                        <h5>Contact Me</h5>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="px-4 pb-5 mb-5 text-center">
+            <img class="d-block mx-auto mb-4" id="my-photo" src="images/me2023.jpg" alt="Sara Shember" height="150">
+            <h1 id="My-name" class="display-5 fw-bold">I'm Sara Shember</h1>
+            <div class="col-lg-6 mx-auto">
+              <p class="lead mb-4">
+                Hello, I am a <strong>fullstack developer.</strong>
+                Use the menu, or scroll down to see the diferent sections, and of course <a id="Contact-link" href="#Contact-Me">contact me</a> if you interested in my profile.</p>
+              <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+              </div>
+            </div>
+        </div>
+    </section>
+    <section id="Skills-Resume">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="row row-1 g-0 border rounded flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                        <div class="col p-4 d-flex flex-column position-static main-cards">
+                            <h2 class="mb-4">My core skills</h2>
+                            <ul class="mb-0">
+                                <li class="mb-2">Web Development
+                                    <span class="mb-1 text-body-secondary">
+                                        (html, css, bootstrap, js & node)
+                                    </span>
+                                </li>
+                                <li class="mb-2">Java Development</li>
+                                <li class="mb-2">Database management
+                                    <span class="mb-1 text-body-secondary">
+                                        (MySQL, Oracle & SQLserver)
+                                    </span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-auto d-none d-lg-block my-auto px-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="150" fill="#D6E4E5" class="bi bi-laptop" viewBox="0 0 16 16">
+                                <path d="M13.5 3a.5.5 0 0 1 .5.5V11H2V3.5a.5.5 0 0 1 .5-.5h11zm-11-1A1.5 1.5 0 0 0 1 3.5V12h14V3.5A1.5 1.5 0 0 0 13.5 2h-11zM0 12.5h16a1.5 1.5 0 0 1-1.5 1.5h-13A1.5 1.5 0 0 1 0 12.5z"/>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="row row-1 g-0 border rounded flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                        <div class="col p-4 d-flex flex-column position-static main-cards">
+                            <h2 class="mb-4">My certifications</h2>
+                            <ul class="mb-0">
+                                <li class="mb-2">Salesforce B2C Commerce Cloud Developer.
+                                    <span class="mb-1 text-body-secondary">
+                                        (April, 2022)
+                                    </span>
+                                </li>
+                                <li class="mb-2">Mulesoft Developer L1 (Mule 4)
+                                    <span class="mb-1 text-body-secondary">
+                                        (May, 2021)
+                                    </span>
+                                </li>
+                                <li class="mb-2">PET Cambridge.
+                                    <span class="mb-1 text-body-secondary">
+                                        (2013)
+                                    </span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-auto d-none d-lg-block my-auto px-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="150" fill="#D6E4E5" class="bi bi-award-fill" viewBox="0 0 16 16">
+                                <path d="m8 0 1.669.864 1.858.282.842 1.68 1.337 1.32L13.4 6l.306 1.854-1.337 1.32-.842 1.68-1.858.282L8 12l-1.669-.864-1.858-.282-.842-1.68-1.337-1.32L2.6 6l-.306-1.854 1.337-1.32.842-1.68L6.331.864 8 0z"/>
+                                <path d="M4 11.794V16l4-1 4 1v-4.206l-2.018.306L8 13.126 6.018 12.1 4 11.794z"/>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="row row-2 g-0 border rounded flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                        <div class="col p-4 d-flex flex-column position-static main-cards">
+                            <h2 class="mb-4">My education</h2>
+                            <ul class="mb-0">
+                                <li class="mb-4" id="education">Bachelor's degree at Informatic Science
+                                    <span class="mb-1 text-body-secondary">
+                                        (Specialty in Ubiquitous Computing)
+                                    </span>
+                                    at IPN-UPIICSA (2022)
+                                </li>
+                                <li>Programming Technician
+                                    <span class=" text-body-secondary">
+                                        at IPN-CECyT #9
+                                    </span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-auto d-none d-lg-block my-auto px-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="150" fill="#D6E4E5" class="bi bi-book" viewBox="0 0 16 16">
+                                <path d="M1 2.828c.885-.37 2.154-.769 3.388-.893 1.33-.134 2.458.063 3.112.752v9.746c-.935-.53-2.12-.603-3.213-.493-1.18.12-2.37.461-3.287.811V2.828zm7.5-.141c.654-.689 1.782-.886 3.112-.752 1.234.124 2.503.523 3.388.893v9.923c-.918-.35-2.107-.692-3.287-.81-1.094-.111-2.278-.039-3.213.492V2.687zM8 1.783C7.015.936 5.587.81 4.287.94c-1.514.153-3.042.672-3.994 1.105A.5.5 0 0 0 0 2.5v11a.5.5 0 0 0 .707.455c.882-.4 2.303-.881 3.68-1.02 1.409-.142 2.59.087 3.223.877a.5.5 0 0 0 .78 0c.633-.79 1.814-1.019 3.222-.877 1.378.139 2.8.62 3.681 1.02A.5.5 0 0 0 16 13.5v-11a.5.5 0 0 0-.293-.455c-.952-.433-2.48-.952-3.994-1.105C10.413.809 8.985.936 8 1.783z"/>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="row row-2 g-0 border rounded flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                        <div class="col p-4 d-flex flex-column position-static main-cards">
+                            <h2 class="mb-0">My current job</h2>
+                            <div class="mt-3 mb-4 text-body-secondary" id="ibm">IBM since 2020.</div>
+                            <p class="card-text mb-auto job">Here, I'm an application developer, currently working at a AMS project with Salesforce Commerce Cloud for a huge retail company based in Mexico. </p>
+                            <a href="#MyJobExperience" class="stretched-link my-0">Know more</a>
+                        </div>
+                        <div class="col-auto d-none d-lg-block my-auto px-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="150" fill="#D6E4E5" class="bi bi-briefcase-fill" viewBox="0 0 16 16">
+                                <path d="M6.5 1A1.5 1.5 0 0 0 5 2.5V3H1.5A1.5 1.5 0 0 0 0 4.5v1.384l7.614 2.03a1.5 1.5 0 0 0 .772 0L16 5.884V4.5A1.5 1.5 0 0 0 14.5 3H11v-.5A1.5 1.5 0 0 0 9.5 1h-3zm0 1h3a.5.5 0 0 1 .5.5V3H6v-.5a.5.5 0 0 1 .5-.5z"/>
+                                <path d="M0 12.5A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5V6.85L8.129 8.947a.5.5 0 0 1-.258 0L0 6.85v5.65z"/>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="Job-Experience">
+        <div id="Projects-container" class="container px-4 py-5" id="icon-grid">
+            <h2 class="pb-2 border-bottom">Job Experience</h2>
+            <ul class="nav nav-tabs">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" onclick="disappear('IBM')">2019-2023</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" onclick="disappear('Professional-Practices')">2022</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" onclick="disappear('Previous-Jobs')">2020 & beyond.</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" onclick="disappear('Skills')">More Skills</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link disabled" onclick="disappear('Remarkable-Projects')">Remarkable Projects</a>
+                </li>
+            </ul>
+            <div id="IBM" class="project-tabs row row-cols-1 row-cols-lg-2 row-cols-xl-3 g-4 pt-3 px-5">
+                <div class="w-100">
+                    <h3 class="fw-bold mb-3 fs-4">IBM México</h3>
+                </div>
+                <div class="col d-flex align-items-start">
+                    <div>
+                        <h4>2022-2023</h4>
+                        <p>I'm currently a Salesforce Commerce Cloud Developer.</p>
+                        <p>I'm in charge of maintaining the e-commerce site of the client, of the 2° level support, and of investigating the possible fraud cases at online shopping.</p>
+                    </div>
+                </div>
+                <div class="col d-flex align-items-start">
+                    <div>
+                        <h4>2022</h4>
+                        <p>I started my training as a developer in Salesforce Commerce Cloud.</p>
+                        <p>I'd got my B2C Commerce Cloud Developer certification after 6 months.</p>
+                    </div>
+                </div>
+                <div class="col d-flex align-items-start">
+                    <div>
+                        <h4>2021-2023</h4>
+                        <p>I'm currently helping at the automation of some SAP processes using java code & Rational Functional Tester IDE.</p>
+                        <p>Also I'm the backup leader for this team since 2022.</p>
+                    </div>
+                </div>
+                <div class="col d-flex align-items-start">
+                    <div>
+                        <h4>2020-2022</h4>
+                        <p>I started working in a AMS project with a huge retailer based in Mexico. I was part of the Mulesoft developers team.</p>
+                        <p>After 3 months in the project I'd got the Mule 4 developer certification, and started training other team members.</p>
+                    </div>
+                </div>
+                <div class="col d-flex align-items-start">
+                    <div>
+                      <h4>2019-2020</h4>
+                      <p>I started as a Development intern. It was a period of 6 months, where I practiced Salesforce Development with the Trailblazer courses.</p>
+                      <p>Here is my <a class="trailblazer" href="https://trailblazer.me/id/shember">Trailblazer profile.</a></p>
+                    </div>
+                </div>
+            </div>
+            <div id="Professional-Practices" class="project-tabs row row-cols-1 row-cols-lg-2 row-cols-xl-3 g-4 pt-3 px-5 d-none">
+                <div class="w-100">
+                    <h3 class="fw-bold mb-3 fs-4">Professional Practices</h3>
+                </div>
+                <div class="col d-flex align-items-start">
+                    <div>
+                        <h4>Momentum Tecnologías de la Información</h4>
+                        <p>From July to August.</p>
+                        <p>Along this month, I helped at developing an e-commerce site for an Auto Repair Shop.</p>
+                    </div>
+                </div>
+                <div class="col d-flex align-items-start">
+                    <div>
+                        <h4>Used Skills</h4>
+                        <p>I was involved in the project from 0, so I followed all the developing cycle using an agile methodology and MVC for the architecture of the system, I also used my Fullstack Developer skills for delivering the project.</p>
+                    </div>
+                </div>
+                <div class="col d-flex align-items-start">
+                    <div>
+                        <h4>Work done</h4>
+                        <p>I'd got the requirements from the client, made the documentation of the project, elaborated the needed diagrams, created de DB with MySQL, developed the code with node for the backend and js for the frontend, and made the final delivery presentation for the client.</p>
+                    </div>
+                </div>
+            </div>
+            <div id="Previous-Jobs" class="project-tabs row row-cols-1 row-cols-lg-2 row-cols-xl-3 g-4 pt-3 px-5 d-none">
+                <div class="col d-flex align-items-start">
+                    <div>
+                        <h3 class="fw-bold mb-3 fs-4">Grupo Jaque</h3>
+                        <p>2019</p>
+                        <p>I worked first as JS Developer intern, and then as Android Developer intern.</p>
+                    </div>
+                </div>
+                <div class="col d-flex align-items-start">
+                    <div>
+                        <h3 class="fw-bold mb-3 fs-4">Grupo Tradeco</h3>
+                        <p>2018</p>
+                        <p>I worked as IT intern of DB management.</p>
+                    </div>
+                </div>
+                <div class="col d-flex align-items-start">
+                    <div>
+                        <h3 class="fw-bold mb-3 fs-4">AICM</h3>
+                        <p>Winter 2016 & Winter 2017</p>
+                        <p>I worked as a Bilingual Information Assistant at the Mexico City airport.</p>
+                    </div>
+                </div>
+            </div>
+            <div id="Skills" class="project-tabs row row-cols-1 row-cols-lg-2 row-cols-xl-3 g-4 pt-3 d-none">
+                <div class="col d-flex align-items-start">
+                    <div class="px-5">
+                        <h3 class="fw-bold mb-2 fs-4">Multilingual</h3>
+                        <ul class="mb-0">
+                            <li>
+                                <h5>I speak spanish native.</h5>
+                            </li>
+                            <li>
+                                <h5>Fluent english. (C1)</h5>
+                            </li>
+                            <li>
+                                <h5>Intermidiate french. (B2)</h5>
+                            </li>
+                            <li>
+                                <h5>And I'm starting to learn german.</h5>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col d-flex align-items-start">
+                    <div class="px-5">
+                        <h3 class="fw-bold mb-2 fs-4">Autodidact & Fast learner</h3>
+                        <p>I like discovering things by myself.</p>
+                        <p>Also I tend to learn kickly.</p>
+                    </div>
+                </div>
+                <div class="col d-flex align-items-start">
+                    <div class="px-5">
+                        <h3 class="fw-bold mb-2 fs-4">Team player</h3>
+                        <p>I love working with more people, I think 2 brains think better than
+                            one.</p>
+                        <p>I also love to be able to help when needed.</p>
+                    </div>
+                </div>
+                <div class="col d-flex align-items-start">
+                    <div class="px-5">
+                        <h3 class="fw-bold mb-2 fs-4">Team leader</h3>
+                        <p>I've been the backup leader for a 3 people team for 2 years.</p>
+                        <p>And used to be the leader at most of the school projects I've made.</p>
+                    </div>
+                </div>
+                <div class="col d-flex align-items-start">
+                    <div class="px-5">
+                        <h3 class="fw-bold mb-2 fs-4">Teaching skills</h3>
+                        <p>I've trained some people in basic Mulesoft 4 skills
+                            in order to let them be able to help us asap with the
+                            project.</p>
+                        <p>Also I used to give lessons to my university partners of
+                            any subject they asked me.</p>
+                    </div>
+                </div>
+                <div class="col d-flex align-items-start">
+                    <div class="px-5">
+                        <h3 class="fw-bold mb-2 fs-4">My main curses.</h3>
+                        <ul class="mb-0">
+                            <li class="mb-2">
+                                <h5>The Complete 2023 Web Development Bootcamp</h5>
+                                <span class="text-body-secondary">
+                                    (by Dr. Angela Yu at UDEMY).
+                                </span>
+                            </li>
+                            <li>
+                                <h5>'Red belt course' Computer Science Basics</h5>
+                                <span class="mb-2 text-body-secondary">
+                                    (by Dev.f 2015).
+                                </span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col d-flex align-items-start">
+                    <div class="px-5">
+                        <h3 class="fw-bold mb-2 fs-4">Some hobbies.</h3>
+                        <ul class="mb-0">
+                            <li>
+                                <h5>I love puzzles.</h5>
+                            </li>
+                            <li>
+                                <h5>I play the piano.</h5>
+                            </li>
+                            <li>
+                                <h5>I love playing all sports, my favourite is basketball.</h5>
+                            </li>
+                            <li>
+                                <h5>And I like to repair computers, cell phones and mechanisms in general.</h5>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="Contact-Me">
+        <div class="container my-5">
+            <h2>Did you like my profile?</h2>
+            <div class="contact-container mt-4">
+                <div class="card pt-5 px-5 pb-0">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="25%" fill="#EB6440" class="bi bi-whatsapp" viewBox="0 0 16 16" alt="whatsapp-icon">
+                    <path d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"/>
+                  </svg>
+                  <div class="card-body mt-3">
+                    <h3 class="card-title">Send me a message!</h3>
+                    <p class="card-text">Let's get in touch by cellphone:</p>
+                    <h4>(+52) 5534437546</h4>
+                  </div>
+                </div>
+                <div class="card pt-5 px-5 pb-0">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="25%" fill="#EB6440" class="bi bi-envelope" viewBox="0 0 16 16" alt="mail-icon">
+                        <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z"/>
+                      </svg>
+                  <div class="card-body mt-3">
+                    <h3 class="card-title">Send me a mail!</h3>
+                    <p class="card-text">Let's get in touch by mail:</p>
+                    <h4>sara.shember@gmail.com</h4>
+                  </div>
+                </div>
+              </div>
+        </div>
+    </section>
+    <section id="Footer" class="m-5 mb-0">
+        <div class="container border-top px-0">
+            <footer class="d-flex flex-wrap py-3">
+                <div class="col-md-4 d-flex align-items-center">
+                    <span class="mb-3 mb-md-0 text-body-secondary">© 2023 Sara Shember</span>
+                </div>
+                <ul class="nav col-md-8 justify-content-end list-unstyled d-flex">
+                    <li class="ms-3"><a class="text-body-secondary trailblazer" href="https://trailblazer.me/id/shember">
+                        Trailblazer</a>
+                    </li>
+                    <li class="ms-3"><a class="text-body-secondary" href="https://www.linkedin.com/in/sara-teresa-shember-de-los-r%C3%ADos-4780381a0/">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="2rem" fill="#EB6440" class="bi bi-linkedin" viewBox="0 0 16 16">
+                            <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/>
+                        </svg>
+                    </a></li>
+                    <li class="ms-3"><a class="text-body-secondary" href="https://github.com/Shember">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="2rem" fill="#EB6440" class="bi bi-github" viewBox="0 0 16 16">
+                            <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+                        </svg>
+                    </a></li>
+                </ul>
+            </footer>
+        </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+</body>
+</html>

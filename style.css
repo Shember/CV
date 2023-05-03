@@ -1,0 +1,196 @@
+body {
+    font-family: 'Work Sans', sans-serif;
+    background-color: #EFF5F5;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Kiwi Maru', serif;
+    color: #497174;
+}
+a {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+    font-weight: bolder;
+}
+#Menu {
+    width: 99vw;
+    display: flex;
+    justify-content: flex-end;
+}
+.btn-menu {
+    position: fixed;
+    border: 2px solid #EB6440;
+}
+.btn-menu:hover {
+    border-color: #EFF5F5;
+    background-color: #EB6440;
+}
+.btn-menu:hover > svg {
+    fill: #EFF5F5;
+}
+#My-name, .stretched-link {
+    color: #2E848A;
+}
+
+#Myself, #Projects-container {
+    background-color: #D6E4E5;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+#my-photo {
+    border-radius: 20%;
+}
+#Contact-link {
+    color: #EB6440;
+    font-weight: bold;
+}
+div.col-md-6{
+    margin-bottom: 1vh;
+}
+.main-cards {
+    height: 270px;
+}
+ul {
+    list-style-image: url(images/star.svg);
+}
+#Job-Experience h2 {
+    color: #2E848A;
+}
+#Projects-container {
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+#Job-Experience a {
+    font-size: 1.25rem;
+    font-weight: 500;
+    color: #497174;
+}
+#Job-Experience a:hover {
+    font-weight: 800;
+    text-decoration: none;
+    border-width: 3px;
+}
+.nav-tabs, .nav-item {
+    border-color: #EFF5F5;
+    border-width: 3px;
+}
+.nav-item .active {
+    background-color: #2E848A !important;
+    color: #EFF5F5 !important;
+}
+.nav-item .active:hover {
+    border-color: #2E848A !important;
+}
+#Skills p {
+    font-size: 1.25rem;
+}
+#Skills h3 {
+    font-size: 1.75rem !important;
+}
+#Job-Experience p {
+    font-size: 1.25rem;
+}
+#Contact-Me {
+    text-align: center;
+}
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+    min-width: 45%;
+}
+.card {
+    width: 45%;
+    border-radius: 20px;
+    background-color: #EFF5F5;
+
+}
+.bi-whatsapp, .bi-envelope {
+    align-self: center;
+}
+.trailblazer {
+    color: #EB6440 !important;
+    font-weight: bold;
+}
+.trailblazer:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 1200px) {
+    .row-1 {
+        height: 300px;
+    }
+    .row-2 {
+        height: 344px;
+    }
+    .main-cards {
+        max-width: 256px;
+    }
+    .main-cards>h2{
+        width: 140%;
+    }
+    .job {
+        margin-bottom: 1rem !important;
+    }
+}
+@media (max-width: 991px) {
+    .row-1, .row-2 {
+        height: 260px;
+    }
+    .main-cards {
+        max-width: 95%;
+    }
+    .main-cards>h2 {
+        width: 100%;
+    }
+    #ibm, #education, .job {
+        margin-bottom: 2% !important;
+    }
+    footer {
+        justify-content: space-between;
+    }
+}
+@media (max-width: 767px) {
+    .row-1, .row-2, .main-cards {
+       height: auto !important;
+    }
+    #education, .job, #ibm {
+        margin-bottom: 1.5rem !important;
+    }
+    .contact-container {
+        flex-direction: column;
+    }
+    .card {
+        width: 100%;
+        margin-bottom: 1rem;
+        padding: 1rem 0% !important;
+    }
+    footer {
+        justify-content: center !important;
+    }
+}
+@media (max-width: 525px) {
+    .main-cards {
+        padding: .75rem !important;
+    }
+    .main-cards>h2 {
+        font-size: large;
+    }
+    #education, #ibm{
+        margin-bottom: 1rem !important;
+    }
+    .job, .stretched-link {
+        margin-bottom: 0.5rem !important;
+    }
+    footer .text-body-secondary {
+        font-size: small;
+    }
+}
+@media (max-width: 360px) {
+    h3{
+        font-size: 1rem;
+    }
+    h4 {
+        font-size: 1rem;
+    }
+}
