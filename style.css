@@ -52,7 +52,7 @@ div.col-md-6{
     height: 270px;
 }
 ul {
-    list-style-image: url(images/star.svg);
+    list-style-image: url(./images/star.svg);
 }
 #Job-Experience h2 {
     color: #2E848A;
